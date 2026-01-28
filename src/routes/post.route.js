@@ -16,4 +16,5 @@ router.delete('/deletePostById/:post_id', postController.deletePostById)
 router.put('/updatePostById/:post_id', postController.updatePostById)
 
 router.get('/getPostByUserId', authMiddleware, postController.getPostByUserId)
+
 module.exports = router;
